@@ -1,0 +1,23 @@
+section.banner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box; }
+  section.banner .frame {
+    width: 100%; }
+    section.banner .frame img {
+      width: 100%;
+      bottom: 0; }
+  section.banner p {
+    padding: 0 0;
+    text-align: left; }
+  section.banner span.credit {
+    padding-right: 5px; }
+
+@media only screen and (max-width: 640px) {
+  section.banner {
+    padding-top: 10 !important;
+    margin-bottom: -10px; }
+    section.banner p {
+      padding: 5px 10px 0 10px; } }
+
+/*# sourceMappingURL=banner.css.map */

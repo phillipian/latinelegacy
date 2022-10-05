@@ -1,0 +1,33 @@
+footer {
+  height: 60px;
+  max-height: 80px;
+  width: 100%;
+  clear: both;
+  box-sizing: border-box;
+  background-color: white;
+  padding: 50px 0 70px 0;
+  border-top: 2px solid black; }
+  footer h3 {
+    line-height: 60px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    padding: 0 5%;
+    box-sizing: border-box;
+    letter-spacing: 1.5px; }
+    footer h3 a {
+      text-decoration: none;
+      color: white;
+      border-bottom: 1px solid white; }
+
+@media only screen and (max-width: 640px) {
+  footer {
+    height: 40px;
+    padding: 50px 10%;
+    margin-bottom: 70px; }
+    footer h3 {
+      line-height: 40px;
+      font-size: 14px; } }
+
+/*# sourceMappingURL=footer.css.map */

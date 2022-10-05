@@ -1,0 +1,77 @@
+.mobile {
+  display: none; }
+
+header {
+  background: black no-repeat center center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh; }
+  header .branding h1 {
+    text-align: center;
+    color: #1F2643;
+    letter-spacing: .3px;
+    padding: 25px 0;
+    font-size: 20px; }
+  header .title {
+    color: #1F2643;
+    position: absolute;
+    bottom: 5vw;
+    left: 5vw;
+    right: 5vw;
+    max-width: 30%; }
+    header .title h5, header .title h1 {
+      letter-spacing: 4px; }
+    header .title h1 {
+      word-spacing: 2px;
+      letter-spacing: .2px;
+      padding: 7px 0;
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 75px;
+      font-size: 70px;
+      display: table; }
+    header .title p {
+      font-size: 22px;
+      font-family: 'Playfair Display', serif; }
+    header .title h5 {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: -.2px;
+      padding: 7px 0;
+      margin-top: 15px;
+      display: table; }
+      header .title h5:first-child {
+        padding-bottom: 0; }
+      header .title h5:last-child {
+        padding-top: 0; }
+
+@media only screen and (max-width: 640px) {
+  .mobile {
+    display: block;
+    padding: 20px 10%;
+    margin-bottom: -50px; }
+    .mobile h1 {
+      font-weight: 700;
+      font-size: 36px;
+      color: #1F2643;
+      line-height: 40px;
+      word-spacing: 2px;
+      margin: 15px 0; }
+    .mobile p {
+      margin-bottom: 15px; }
+
+  header {
+    margin-top: 0px;
+    height: 50vh; }
+    header .title {
+      display: none;
+      bottom: 5vw;
+      width: 80%;
+      margin: 0 auto; }
+      header .title h1 {
+        font-size: 20px; }
+      header .title h5 {
+        font-size: 14px; } }
+
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,31 @@
+.photos {
+  width: 100%;
+  margin: 40px auto; }
+  .photos div {
+    width: 50%;
+    box-sizing: border-box;
+    display: inline-block; }
+    .photos div:first-child {
+      padding-right: 2%; }
+    .photos div:last-child {
+      padding-left: 2%; }
+    .photos div span.caption {
+      padding: 0 0 0 0;
+      width: 100%;
+      display: block; }
+    .photos div .photo {
+      width: 100%; }
+      .photos div .photo img {
+        display: block;
+        margin: 0 auto;
+        width: 100%; }
+
+@media only screen and (max-width: 640px) {
+  .photos div {
+    width: 100%;
+    padding: 0;
+    display: block; }
+    .photos div:first-child {
+      margin-bottom: 20px; } }
+
+/*# sourceMappingURL=photos.css.map */

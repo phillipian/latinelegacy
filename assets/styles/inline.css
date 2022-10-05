@@ -1,0 +1,45 @@
+.inline {
+  margin: 30px auto;
+  display: block;
+  max-width: 600px;
+  clear: both;
+  height: auto; }
+  .inline .graph, .inline .photo {
+    max-height: 500px;
+    max-width: 100%;
+    display: block; }
+  .inline.right {
+    float: right;
+    padding: 15px 0 15px 15px; }
+    .inline.right .photo {
+      max-height: 700px; }
+  .inline span.caption {
+    padding: 0 0 10px 0;
+    width: 100%;
+    display: block; }
+  .inline .photo img {
+    display: block;
+    margin: 0 auto;
+    max-height: 500px;
+    max-width: 100%; }
+
+video, #my_video, .video-js, .vjs-default-skin {
+  position: relative !important;
+  padding: none !important;
+  margin: 25px auto 30px auto !important;
+  height: 219px !important;
+  width: 400px !important;
+  display: block !important; }
+
+.vjs-poster {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important; }
+
+@media only screen and (max-width: 640px) {
+  video, #my_video, .video-js, .vjs-default-skin {
+    width: 100% !important; } }
+
+/*# sourceMappingURL=inline.css.map */
