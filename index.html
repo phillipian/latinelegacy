@@ -1,4 +1,4 @@
-<!-- Created by Claire Wang '23 for The Phillipian. Contact him at cwang23@andover.edu for more information.-->
+<!-- Created by Claire Wang ’23 for The Phillipian. Contact him at cwang23@andover.edu for more information.-->
 <!--Copyright (c) 2023 The Phillipian
 Cite The Phillipian if using any information from this website.
 
@@ -8,36 +8,40 @@ This project is open source at https://github.com/phillipian.
 <html lang="en">
 
 <head>
-  <title>The Phillipian — Latiné Legacy Month</title>
+  <title>The Phillipian — Latine Legacy Month</title>
   <link rel="stylesheet" href="assets/styles/main.css" />
   <link rel="stylesheet" href="http://vjs.zencdn.net/5.12.6/video-js.css" />
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta charset="UTF-8" />
   <meta name="description"
     content="We interviewed Latine-identifying students, faculty, and alumni about their relationship with their identity, experiences at this school, and what they hoped to share." />
   <meta name="keywords"
-    content="the phillipian, phillipian, phillips academy, andover, pa, student journalism, newspaper, data, state of the academy, andover, exeter, latine legacy month, hispanic, heritage" />
+    content="the phillipian, phillipian, phillips academy, andover, pa, student journalism, newspaper, data, state of the academy, andover, exeter, Celebrating Latine Legacy Month, hispanic, heritage" />
   <!-- Open Graph data-->
   <meta property="og:url" content="http://latinelegacy.phillipian.net" />
-  <meta property="og:title" content="The Phillipian — Andover Joins the Women's March" />
+  <meta property="og:title" content="The Phillipian — Celebrating Latine Legacy Month" />
   <meta property="og:description"
     content="We interviewed Latine-identifying students, faculty, and alumni about their relationship with their identity, experiences at this school, and what they hoped to share." />
-  <meta property="og:image" content="http://latinelegacy.phillipian.net/assets/images/march/a.murata.header.jpg" />
+  <meta property="og:image" content="http://latinelegacy.phillipian.net/assets/images/social/twitter.card.png" />
   <!-- Twitter data-->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@phillipian" />
-  <meta name="twitter:title" content="The Phillipian — Latine Legacy Month" />
+  <meta name="twitter:title" content="The Phillipian — Celebrating Celebrating Latine Legacy Month" />
   <meta name="twitter:description"
-    content="A day after the inauguration of the 45th President of the United States, Donald Trump, millions of women marched around the world in support of equal rights for all." />
-  <meta name="twitter:image" content="http://latinelegacy.phillipian.net/assets/images/march/a.murata.header.jpg" />
+    content="We interviewed Latine-identifying students, faculty, and alumni about their relationship with their identity, experiences at this school, and what they hoped to share." />
+  <meta name="twitter:image" content="http://latinelegacy.phillipian.net/assets/images/social/twitter.card.png" />
   <!-- Google Plus data-->
   <meta itemscope="" itemtype="https://schema.org/WebSite" />
-  <meta itemprop="name" content="The Phillipian — Latine Legacy Month" />
+  <meta itemprop="name" content="The Phillipian — Celebrating Latine Legacy Month" />
   <meta itemprop="description"
     content="We interviewed Latine-identifying students, faculty, and alumni about their relationship with their identity, experiences at this school, and what they hoped to share." />
-  <meta itemprop="image" content="http://latinelegacy.phillipian.net/assets/images/march/a.murata.header.jpg" />
+  <meta itemprop="image" content="http://latinelegacy.phillipian.net/assets/images/social/twitter.card.png" />
   <style>
+    body {
+      overflow-x: hidden;
+    }
+
     .subheader {
       font-weight: 700;
       letter-spacing: 1px;
@@ -64,47 +68,240 @@ This project is open source at https://github.com/phillipian.
     .longquote p {
       display: inline;
     }
+
+    .article-banner {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .article-banner:hover {
+      text-decoration: underline;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      margin: 2rem 4rem;
+    }
+
+    .flex-item-a {
+      text-align: center;
+      line-height: 1.5rem;
+      /* background-color: #e0e6ed; */
+      align-self: stretch;
+      padding: 1rem;
+      margin: 1rem;
+    }
+
+    .flex-item-a:nth-child(1) {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: stretch;
+      /* margin: 2rem; */
+    }
+
+    .flex-item-a:nth-child(2) {
+      order: 0;
+      flex: 0 1 auto;
+      /* align-self: center; */
+      align-self: stretch;
+      /* margin: 2rem; */
+    }
+
+    .flex-item-a:nth-child(3) {
+      order: 0;
+      flex: 0 1 auto;
+      /* align-self: center; */
+      align-self: stretch;
+      /* margin: 2rem; */
+    }
+
+    .headshot {
+      /* border-radius: 50%; */
+      clip-path: circle();
+      width: 10rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Responsive layout - makes a one column layout instead of a two-column layout */
+    @media (max-width: 800px) {
+      body {
+        overflow-x: hidden;
+      }
+
+      .flex-container {
+        flex-direction: column;
+        display: grid;
+      }
+
+      .other {
+        padding: 2rem;
+      }
+    }
+
+    .mobile {
+      margin-bottom: 1rem;
+    }
+
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+    .column {
+      float: left;
+      width: 50%;
+      padding: 0;
+    }
+
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    /* .flex-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+
+    .flex-item:nth-child(1) {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: center;
+    }
+
+    .flex-item:nth-child(2) {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: center;
+    }
+
+    .flex-item:nth-child(3) {
+      order: 0;
+      flex: 0 1 auto;
+      align-self: center;
+    } */
   </style>
 </head>
 
 <body>
   <nav class="shadow"><img src="assets/images/p.svg" />
-    <h3 style="color: #e0e6ed">Andover Latiné Legacy Month</h3><a class="menu" href=""></a>
+    <h3 style="color: #e0e6ed">Andover Latine Legacy Month</h3><a class="menu" href=""></a>
     <ul>
       <li><a href="http://phillipian.net"><img src="assets/images/p.svg" /></a></li>
-      <li><b>NEWS</b> | Andover Latiné Legacy Month</li>
+      <li><b>DIGITAL</b> | Andover Latine Legacy Month</li>
     </ul>
   </nav>
-  <header style="background-image: url(assets/images/march/j.sanchez.header.png);">
+  <header style="background-image: url(assets/images/march/speaker.header.png);">
     <div class="branding">
-      <h1><b>The Phillipian</b> | News</h1>
+      <h1 style="color: #e0e7eb"><b>The Phillipian</b> | Digital</h1>
     </div>
     <div class="title" style="color: #e0e6ed !important">
-      <h1>Latiné Legacy Month</h1>
-      <p>We interviewed Latine-identifying students, faculty, and alumni about their relationship with their identity,
+      <h1>Latine Legacy Month</h1>
+      <p>We interviewed Latine-identifying students and faculty about their relationship with their identity,
         experiences at this school, and what they hoped to share.</p>
-      <h5>By Claire Wang and Mia Xiao <br>Photo: Distributed by John Sanchez.</h5>
+      <h5>By Claire Wang, with contributions from Bianca Morales, Dakota Chang, Davin Jeong, Ashley Agyeman, Nate Liang,
+        Kevin Niu, and Mia Xiao.<br />Photo: Ryan Nasserzadeh/<em>The Phillipian</em></h5>
       <h5></h5>
     </div>
   </header>
   <div class="mobile">
-    <h1>Andover Latiné Legacy Month</h1>
-    <p>We interviewed Latine-identifying students, faculty, and alumni about their relationship with their identity,
+    <h1>Andover Latine Legacy Month</h1>
+    <p>We interviewed Latine-identifying students and faculty about their relationship with their identity,
       experiences at this school, and what they hoped to share.</p>
-    <h5>By Claire Wang and Mia Xiao <br>Photo: Courtesy of Aya Murata.</h5>
+    <h5>By Claire Wang, with contributions from Bianca Morales, Dakota Chang, Davin Jeong, Ashley Agyeman, Nate Liang,
+      Kevin Niu, and Mia Xiao.<br>Photo: Courtesy of Ryan Nasserzadeh.</h5>
     <h5></h5>
+  </div>
+  <div class="other"
+    style="width: 100vw; background-color: #1F2643; text-align: center; padding: 1em 0.5em; color: #e0e6ed"><a
+      href="/articles.html" class="article-banner">Click here for past articles from <em>The Phillipian</em>
+      covering Latine Legacy.</a>
+  </div>
+  <span class="credit" style="font-size: 0.8rem; padding: 0.8rem; font-weight: 400">In celebration of Latine Legacy
+    Month, the board of Alianza Latina invited Wolcott-Hernandez to speak about her journey to represent and reclaim her
+    culture through art at Andover on September 30.</span>
+  <h1 style="margin: 2rem 4rem 0rem 4rem;">Meet our Interviewees:</h1>
+  <div class="flex-container">
+    <div class="flex-item-a">
+      <img class="headshot" src="/assets/images/march/headshots/angie.png" width="20px" />
+      <h2>Angie Ceballos Cardona ’25</h2><br />
+      <p>Angie Ceballos Cardona ’25 is a Lower and is half-Dominican and half-Guatemalan. In addition to being on the
+        board of Alianza Latina, she is also the Mentee Coordinator for the Mixed Heritage Mentorship Program (MCMP), a
+        mentorship program for mixed heritage students on campus, and a member of Fusion.
+      </p>
+    </div>
+    <div class="flex-item-a">
+      <img class="headshot" src="/assets/images/march/headshots/membreno.png" width=20px />
+      <h2>Hector Membreno-Canales, Arts Instructor</h2><br />
+      <p>Hector Membreno-Canales is an Arts Instructor at Phillips Academy. Hector Membreno-Canales was born in San
+        Pedro Sula, Honduras and grew up in Allentown, Pennsylvania. He previously served as a US Army Photographer with
+        international posts including Iraq, El Salvador, Poland and more. He is also currently the Director of the
+        Office of Community and Multicultural Development (CaMD), which works closely with other campus adults and
+        student leaders to provide an affinity space for students of different cultural backgrounds and intersectional
+        identities.
+      </p>
+    </div>
+    <div class="flex-item-a">
+      <img class="headshot" src="/assets/images/march/headshots/john.jpeg" />
+      <h2>John Sanchez ’23</h2><br />
+      <p>John Sanchez ’23 is a Senior from Clifton, New Jersey and is Peruvian American. He is also the Co-Head of
+        Alianza Latina, which is an affinity group for the Latine community on campus. He is a CaMD Scholar for the
+        2022-2023 academic year, researching The Labor Rights Movement in Peru in the Context of Interconnected
+        Struggles Against Colonialism and Environmental Exploitation.
+      </p>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div class="flex-item-a">
+      <img class="headshot" src="/assets/images/march/headshots/victoria.png" width="20px" />
+      <h2>Victoria Ortiz ’23</h2><br />
+      <p>Victoria Ortiz ’23 is a Senior from Brooklyn, New York and is Puerto Rican American. She is a former
+        Co-President of and currently on the board of AfLatAm, which is the Afro-Latine American Society open to all
+        students on campus. She is also a member of Fusion.
+      </p>
+    </div>
+    <div class="flex-item-a">
+      <img class="headshot" src="/assets/images/march/headshots/ben.png" width=20px />
+      <h2>Ben Perez ’23</h2><br />
+      <p>Ben Perez ’23 is a Senior from Boston, MA. He is Salvadoran and is on the board of the Brotherhood, which is
+        an affinity group for Latine and Black male-identifying students on campus.
+      </p>
+    </div>
+    <div class="flex-item-a">
+      <img class="headshot" src="/assets/images/march/headshots/leschhorn.png" />
+      <h2>Brigitte Leschhorn, English Instructor</h2><br />
+      <p>Brigitte Leschhorn is an English Instructor at Phillips Academy. She is originally from Panama and teachers the
+        electives <em>Strange Worlds</em> on speculative fiction as well as <em>Rebels, Gods, and Villains in Central
+          American Literature</em>, which focuses on the rich history of Central America.
+      </p>
+    </div>
+    <div class="flex-item-a">
+      <img class="headshot" src="/assets/images/march/headshots/josh.png" />
+      <h2>Josh Espinoza ’25</h2><br />
+      <p>Josh Espinoza ’25 is a Lower from Bronx, New York. He is Honduran American. On campus, he also serves on the
+        board of Brotherhood.
+      </p>
+    </div>
   </div>
   <div class="wrapper">
     <main>
       <article id="intro">
         <p>
-          Latiné Legacy Month takes place from September 15 to October 15. The month includes the celebration of
+          Latine Legacy Month takes place from September 15 to October 15. The month includes the celebration of
           independence days of various Latin American countries, including Costa Rica, El Salvador, Guatemala, Honduras,
           Nicaragua, Mexico, and Chile. The month serves as a special occasion to celebrate the rich culture,
-          contributions, and profound history of the Latiné community.</p>
+          contributions, and profound history of the Latine community.</p>
 
-        <p>For Latiné Legacy Month this year, The Phillipian reached out to some Latiné-identifying Andover students and
-          faculty to ask about their thoughts on the month of celebration and their experiences with being Latiné at
+        <p>For Latine Legacy Month this year, <em>The Phillipian</em> reached out to some Latine-identifying Andover
+          students and
+          faculty to ask about their thoughts on the month of celebration and their experiences with being Latine at
           Andover.</p>
       </article>
       <!-- <section class="banner">
@@ -116,7 +313,7 @@ This project is open source at https://github.com/phillipian.
       </section> -->
       <article id="">
         <h2 class="subheader">What does this month mean to you and what are you doing yourself to celebrate?</h2><br>
-        <h4 style="font-size: 20px;">John Sanchez '23</h4>
+        <h4 style="font-size: 20px;">John Sanchez ’23</h4>
         <br>
         <p class="longquote"> I think this month is like, it's about reflection. And just thinking back on how my Latino
           identity impacts me&#8230; I hear out where I'm from. I'm from Clifton, New Jersey, which happens to be a very
@@ -128,7 +325,7 @@ This project is open source at https://github.com/phillipian.
 
         <h4 style="font-size: 20px;">Hector Membreno-Canales, Arts Instructor</h4>
         <br>
-        <p class="longquote">I know that Philips Academy isn't the only place celebrating this holiday. We have the
+        <p class="longquote">I know that Phillips Academy isn't the only place celebrating this holiday. We have the
           great privilege of being just a couple miles away from communities that are predominantly Latinx: Lawrence,
           Haverhill, but also the greater Boston area. I myself was born in Honduras, and one of the largest communities
           of Honduran Americans in the United States is actually in Boston. So I'll likely be spending my time looking
@@ -136,22 +333,32 @@ This project is open source at https://github.com/phillipian.
           an upcoming Hispanic Heritage celebration weekend&#8230; There's no shortage of opportunities to get involved
           beyond our campus, so that's how I'll be celebrating.</p>
 
-        <h4 style="font-size: 20px;">John Espinoza</h4><br>
+        <h4 style="font-size: 20px;">Josh Espinoza ’25</h4><br>
         <p class="longquote">I don't really celebrate it. But now that I'm here and I have a space where I can celebrate
           it&#8230;wherever there is the opportunity to speak about my culture, or represent it, I will. But in the
           past, I've never really thought about it. I wasn't aware of it. But now that I'm here with so many groups of
           people, I realized the importance of celebrating where I come from. So to me, it just reminds me of who I am,
           what I'm here for, and what I need to do on campus.</p>
 
-        <h4 style="font-size: 20px;">Angie Ceballos Cardona</h4><br>
+        <h4 style="font-size: 20px;">Angie Ceballos Cardona ’25</h4><br>
         <p class="longquote">This month means celebrating my history and future. I have taken this month to really
-          reflect on what it means to be Latinx in the spaces I am in daily such as Andover and/or my sports team.</p>
+          reflect on what it means to be Latinx in the spaces I am in daily such as such as Andover and my sports team.</p>
 
       </article>
+      <div class="row">
+        <div class="column">
+          <img src="/assets/images/march/alianza-dance-1.JPG" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="/assets/images/march/alianza-dance-2.JPG" alt="Forest" style="width:100%">
+        </div>
+      </div>
+      <span class="credit">On October 8, Alianza hosted a dance in Lower Right in Paresky Commons. LBenardete/<em>The
+          Phillipian</em></span>
       <article id="">
         <h2 class="subheader">What has Andover done in the past for the Latine Legacy Month? What is Andover doing this
           year for the Latine Legacy Month?</h2><br>
-        <h4 style="font-size: 20px;">Ben Perez '23</h4>
+        <h4 style="font-size: 20px;">Ben Perez ’23</h4>
         <br>
         <p class="longquote"> I don't think the school has done a lot from what I've seen or recall. I think it's mostly
           Alianza Latina who's in charge of that. Maybe they hold something in Commons, but I don't think it was
@@ -184,19 +391,19 @@ This project is open source at https://github.com/phillipian.
           be heard, to share. You really can tell what Andover cares about by what they give space to so.</p>
       </article>
       <section class="banner">
-        <div class="frame"><img src="assets/images/march/j.sanchez.3.png" /></div><span class="credit">Photos
-          distributed by John Sanchez.</span>
+        <div class="frame"><img src="assets/images/march/LBenardete.JPG" /></div><span class="credit">LBenardete/<em>The
+            Phillipian</em>.</span>
         <caption>
           <p> </p>
         </caption>
       </section>
       <article id="">
-        <h2 class="subheader">Are you involved with the Latine community on campus? How do you hope to contribute??</h2>
+        <h2 class="subheader">Are you involved with the Latine community on campus? How do you hope to contribute?</h2>
         <br>
         <br>
-        <h4 style="font-size: 20px;">John Sanchez '23</h4><br>
+        <h4 style="font-size: 20px;">John Sanchez ’23</h4><br>
         <p class="longquote">
-          I am one of the co-heads for Alianza Latinx&#8230; We do have a lot of events planned for this month. We
+          I am one of the co-heads for Alianza Latina We do have a lot of events planned for this month. We
           screened a movie&#8230; Selena, which is about this&#8230; popstar or music superstar from the 90s by the same
           name Selena. We have&#8230; a school wide dance. It's open to everyone. It's&#8230;a really nice&#8230;
           combination of events just to&#8230; give space for our identity, [which is] sometimes &#8230;very hard to
@@ -204,7 +411,7 @@ This project is open source at https://github.com/phillipian.
           representation&#8230; amongst the staff, or even just having spaces within our dorms&#8230; So&#8230; we give
           that space to ourselves, and we sometimes open it up to everyone on campus too.</p>
 
-        <h4 style="font-size: 20px;">Victoria Ortiz '23</h4><br>
+        <h4 style="font-size: 20px;">Victoria Ortiz ’23</h4><br>
         <p class="longquote">
           I&#8230; like having those open door meetings [with Alianza, which] also helps bring this type of conversation
           [about Latinx Legacy Month] to a broader audience because I don't think many people stop and take the time to
@@ -215,7 +422,7 @@ This project is open source at https://github.com/phillipian.
           learn about it.&rdquo; And obviously, everyone who goes [to open door meetings], is willing to engage in and
           indulge in that&#8230; so I always really enjoy [the dances and the open door meetings].</p>
 
-        <h4 style="font-size: 20px;">Angie Ceballos Cardona '25</h4><br>
+        <h4 style="font-size: 20px;">Angie Ceballos Cardona ’25</h4><br>
         <p class="longquote">
           I am on the board of Alianza and as a team we are working really hard to give this month all the appreciation
           it deserves. Personally, I hope to put a lot of work in alongside the board to make this month so special to
@@ -226,14 +433,14 @@ This project is open source at https://github.com/phillipian.
         <h2 class="subheader">What can Andover&mdash;both the institution and the student body&mdash;do to make this
           month more special and help strengthen the presence of the Latine community here?</h2>
         <br />
-        <h4 style="font-size: 20px;">Josh Espinoza '25</h4><br>
+        <h4 style="font-size: 20px;">Josh Espinoza ’25</h4><br>
         <p class="longquote">
           Maybe it could be&#8230; a celebration&#8230; funded by the school, that way we could have more resources. Or
           it could be like a workshop, just talking about different cultures where people can explore&#8230;giv[ing]
           students a space to talk about the places they come from. [If it is] school organized&#8230; people will not
           only like take it more seriously, but [it would] also be interesting.</p>
 
-        <h4 style="font-size: 20px;">Ben Perez '23</h4><br>
+        <h4 style="font-size: 20px;">Ben Perez ’23</h4><br>
         <p class="longquote">
           I feel like the Spanish department has been trying to do a lot in that aspect. I feel like in general, in the
           US, the [Latine] community is kind of overlooked, so&#8230; that microcosm kind of&#8230; takes a role [at]
@@ -261,161 +468,75 @@ This project is open source at https://github.com/phillipian.
 
         <h4 style="font-size: 20px;">Brigitte Leschhorn, English Instructor</h4><br>
         <p class="longquote">
-        Because I grew up in [Panama], I saw different types of what it means to be Central American, [what it means to
-        be] Panamanian, what it means to be Latin[e]. And so I think [the question of whether we should use
-        &ldquo;Hispanic&rdquo; or &ldquo;Latine&rdquo;] has a very complicated answer&#8230; A lot of times I feel like,
-        especially during this month when we should be allowed to talk about it, nobody wants to hear it. Everyone just
-        wants to hear &ldquo;who are your heroes,&rdquo; and they want to dismiss the parts of us that we&rsquo;re
-        wrestling with. We're still deeply wrestling with the colonialism and imperialism that has decimated our
-        regions&#8230; that has caused that major exodus of immigration. So all of these things touch&#8230; And just
-        even with what happened from Florida to Massachusetts recently&#8230;a lot of things are in the forefront of my
-        mind&#8230; It's not that I don't want to celebrate our history; it's that our history is really complicated.
-        And can we at least get some time to talk about it? To me, that's what this month should be about: a time to
-        unpack that. Give us some time to unpack ourselves.</p>
+          Because I grew up in [Panama], I saw different types of what it means to be Central American, [what it means
+          to
+          be] Panamanian, what it means to be Latin[e]. And so I think [the question of whether we should use
+          &ldquo;Hispanic&rdquo; or &ldquo;Latine&rdquo;] has a very complicated answer&#8230; A lot of times I feel
+          like,
+          especially during this month when we should be allowed to talk about it, nobody wants to hear it. Everyone
+          just
+          wants to hear &ldquo;who are your heroes,&rdquo; and they want to dismiss the parts of us that we&rsquo;re
+          wrestling with. We're still deeply wrestling with the colonialism and imperialism that has decimated our
+          regions&#8230; that has caused that major exodus of immigration. So all of these things touch&#8230; And just
+          even with what happened from Florida to Massachusetts recently&#8230;a lot of things are in the forefront of
+          my
+          mind&#8230; It's not that I don't want to celebrate our history; it's that our history is really complicated.
+          And can we at least get some time to talk about it? To me, that's what this month should be about: a time to
+          unpack that. Give us some time to unpack ourselves.</p>
 
-        <h4 style="font-size: 20px;">Angie Ceballos Cardona</h4><br>
+        <h4 style="font-size: 20px;">Angie Ceballos Cardona ’25</h4><br>
         <p class="longquote">
-        It&rsquo;s important to know that it is okay to not be informed and that questions should be asked. There is no
-        specific approach to Latinx Legacy Month but to recognize the latine voices around you because they are a part
-        of Andover life.</p>
+          It&rsquo;s important to know that it is okay to not be informed and that questions should be asked. There is
+          no
+          specific approach to Latinx Legacy Month but to recognize the latine voices around you because they are a part
+          of Andover life.</p>
 
-        <h4 style="font-size: 20px;">Josh Espinoza '25</h4><br>
+        <h4 style="font-size: 20px;">Josh Espinoza ’25</h4><br>
         <p class="longquote">
-        If people are curious to learn more about somebody's culture, I think it should be a safe space to talk about
-        anything&#8230; I don't think it's rude to ask somebody about their culture&#8230; It's okay if you want to
-        learn more about who I am where I'm from. That's perfectly fine&#8230; Andover is already a space where I can
-        express myself, but I also feel like we should be able to have open conversations about different cultures and
-        how they're represented on campus.</p>
+          If people are curious to learn more about somebody's culture, I think it should be a safe space to talk about
+          anything&#8230; I don't think it's rude to ask somebody about their culture&#8230; It's okay if you want to
+          learn more about who I am where I'm from. That's perfectly fine&#8230; Andover is already a space where I can
+          express myself, but I also feel like we should be able to have open conversations about different cultures and
+          how they're represented on campus.</p>
 
-        <h4 style="font-size: 20px;">John Sanchez</h4><br>
+        <h4 style="font-size: 20px;">John Sanchez ’23</h4><br>
         <p class="longquote">
-        I think I really want to emphasize that it's not heritage. Tt is about legacy. I think that's what it's
-        about&#8230; I think [when] people view Latin[e] people&#8230; they have a certain image that comes to their
-        mind&#8230; That has to be confronted&#8230; We're not just a monolith&#8230; We all don't have just brown skin.
-        We don't all have like baggy clothing, chains just wrapped around our neck all the time, [and] even though I
-        [do], we all don't speak Spanish&#8230;There are so many more things are just confined to a stereotype...
-        Really, it's not just something that's interpersonal. It's something that's structuralized&#8230;.I&rsquo;m
-        thinking of&#8230;trying to make that effort to prioritize perspectives that come from Latin[e] people and
-        within that diaspora, like you could have indigenous Latin[e] people, black Latin[e] people, Indigenous
-        Afro-Latin[e] people&#8230; There's, there's a whole spectrum. It's not just brown. That makes it very much
-        simplistic, and really just erases the whole legacy of everything.</p>
+          I think I really want to emphasize that it's not heritage. Tt is about legacy. I think that's what it's
+          about&#8230; I think [when] people view Latin[e] people&#8230; they have a certain image that comes to their
+          mind&#8230; That has to be confronted&#8230; We're not just a monolith&#8230; We all don't have just brown
+          skin.
+          We don't all have like baggy clothing, chains just wrapped around our neck all the time, [and] even though I
+          [do], we all don't speak Spanish&#8230;There are so many more things are just confined to a stereotype...
+          Really, it's not just something that's interpersonal. It's something that's structuralized&#8230;.I&rsquo;m
+          thinking of&#8230;trying to make that effort to prioritize perspectives that come from Latin[e] people and
+          within that diaspora, like you could have indigenous Latin[e] people, black Latin[e] people, Indigenous
+          Afro-Latin[e] people&#8230; There's, there's a whole spectrum. It's not just brown. That makes it very much
+          simplistic, and really just erases the whole legacy of everything.</p>
 
         <h4 style="font-size: 20px;">Hector Membreno-Canales, Arts Instructor</h4><br>
         <p class="longquote">
-        I would just say that these are holidays. We celebrate them because some of these voices historically have not
-        been heard. So I would use this as an opportunity if you're unfamiliar with these communities, to use it as an
-        opportunity to go to events and ask some questions. And to just you know, be a member of our very diverse
-        community.
+          I would just say that these are holidays. We celebrate them because some of these voices historically have not
+          been heard. So I would use this as an opportunity if you're unfamiliar with these communities, to use it as an
+          opportunity to go to events and ask some questions. And to just you know, be a member of our very diverse
+          community.
         </p>
       </article>
-      <section class="banner">
+      <!-- <section class="banner">
         <div class="frame"><img src="assets/images/march/j.sanchez.4.png" /></div><span class="credit">Photos
-          distributed by John Sanchez.</span>
+          courtesy of John Sanchez.</span>
         <caption>
           <p> </p>
         </caption>
-      </section>
-      <!-- <article id="narratives">
-        <h2 class="subheader">Alumni Narratives</h2>
-        <p>We reached out to Andover alumni on Facebook with the following post:</p>
-        <div style="margin-bottom: 30px;">
-          <div style="margin: -20px 10% 0 10%; line-height: 22px;">
-            <p><em>Were you, a current Andover student, faculty member, or alumnae, present at the Women's March on
-                Washington or a sister march elsewhere? <em>The Phillipian</em> would love to hear about your
-                experiences at the march (including photos or videos), and reflections on how or if Andover prompted
-                your interest in activism.</em></p>
-          </div>
-          <p>Below are a few of the narratives we received from alumnae who marched around the United States.</p>
-        </div>
-        <h3 style="font-weight: 700; letter-spacing: 1px; margin-bottom: 12px; font-size: 36px;">Boston</h3>
-        <h4 style="font-size: 20px;">Abigail Burman ’12</h4>
-        <div style="margin: -20px 0 0 5%; line-height: 22px;">
-          <p>“I went to the big march in D.C., and it was absolutely overwhelming, people and pink hats in every
-            direction, filling every street. There were so many people (2.5 times the initial estimate) that we ended up
-            taking the inauguration parade route, and the stands that were so empty on the 20th were very full on the
-            21st. This was the inauguration of a new era of democracy and patriotism, led by women, chanting ‘refugees
-            are welcome here,’ and recognizing the necessity of asking tough questions. Movements can’t survive without
-            hope and community, and we marched them both into existence, from towns of 200 to major cities. I’m so
-            excited to see everyone keep up the organizing at the local level and in the midterms. With the care and
-            dedication that coordinated buses from all across america and scoured the internet for security compliant
-            clear plastic bags we are going to haul forth an America that embraces everyone.”</p>
-          <div class="inline">
-            <div class="photo"><img src="assets/images/march/a.burman.jpg" /></div><span class="credit">Courtesy of
-              Abigail Burman.</span><span class="caption"> </span>
-          </div>
-        </div>
-        <h4 style="font-size: 20px;">Jenny Moore Rynne ’82</h4>
-        <div style="margin: -20px 0 0 5%; line-height: 22px;">
-          <p>“Attended the Boston March with my 13-year-old daughter and 26-year-old niece. Emotions ran the gamut, from
-            being excited at the spectacular turnout to being overwhelmed at the enormity of the challenges we face to
-            feeling hopeful as the speakers galvanized the crowd. So thankful we were able to be part of such an
-            historic day!”</p>
-        </div>
-        <h3 style="font-weight: 700; letter-spacing: 1px; margin-bottom: 12px; font-size: 36px;">Washington D.C.</h3>
-        <h4 style="font-size: 20px;">Amanda Zhu ’13</h4>
-        <div style="margin: -20px 0 0 5%; line-height: 22px;">
-          <p>“I'm class of 2013 and I participated in the women's march in D.C. Here are two photos from that march.</p>
-          <p>Me with current English teacher Dr. Vidal, who was one of my favorite teachers at Andover, at the post
-            march Andover gathering at Trustee Gary Lee's restaurant. I hadn't realized Dr. Vidal would be at the march
-            or gathering, but it was really exciting and fitting since she was the one who helped me realize that I was
-            a feminist back in English 100 Junior year.</p>
-          <p>Second photo is me with Congressman Seth Moulton ’97.”</p>
-          <div class="photos">
-            <div>
-              <div class="photo"><img src="assets/images/march/a.zhu.vidal.jpeg" /></div><span class="credit">Courtesy
-                of Amanda Zhu.</span><span class="caption"> </span>
-            </div>
-            <div>
-              <div class="photo"><img src="assets/images/march/a.zhu.moulton.jpeg" /></div><span class="credit">Courtesy
-                of Amanda Zhu.</span><span class="caption"> </span>
-            </div>
-          </div>
-        </div>
-        <h4 style="font-size: 20px;">Regina DeMeo ’90</h4>
-        <div style="margin: -20px 0 0 5%; line-height: 22px;">
-          <p>“Hello, I graduated from Andover in 1990 and have stayed in touch all these years with many of the women
-            that I had the privilege to live with in Junior House, including Jane Tsai Weaver in CA, Jessica Gonzalez in
-            Chicago, Dr. Allegra Cummings and Carolyn Bernal in NY, as well as Meredith Persily Lamel in MD.
-             Unfortunately, I had to work Sat morning, but all these other women were at the march-- Jane was with her
-            daughter in Cali, the rest all came to DC & Jess stayed with me.  Many of us were able to meet up after the
-            march at the local Andover event hosted by Gary Lee.  It was a fantastic turnout that included Bobby
-            Edwards.”</p>
-          <div class="photos">
-            <div>
-              <div class="photo"><img src="assets/images/march/r.demeo.1.jpg" /></div><span class="credit">Courtesy of
-                Regina DeMeo.</span><span class="caption">“A group shot with Bobby Edwards that includes Jess Gonzalez
-                and Carolyn Bernal.”</span>
-            </div>
-            <div>
-              <div class="photo"><img src="assets/images/march/r.demeo.2.jpg" /></div><span class="credit">Courtesy of
-                Regina DeMeo.</span><span class="caption">“Me with Liz Powell who is also class of 90 &amp; now lives
-                with her husband and kids in VA.”</span>
-            </div>
-          </div>
-        </div>
-        <h3 style="font-weight: 700; letter-spacing: 1px; margin-bottom: 12px; font-size: 36px;">New York City</h3>
-        <h4 style="font-size: 20px;">Daphne Matalene ’92</h4>
-        <div style="margin: -20px 0 0 5%; line-height: 22px;">
-          <p>“Hi there — Class of ’92 on the march in N.Y.C. Many Andover pals marched as well, but I went with some
-            Wellesley sisters (and Allison Williams). I worked hard for Hillary, and am still heartbroken that she's not
-            our president. But I loved John Palfrey's post-Election address, too—Andover and Wellesley have long
-            traditions of service, and I aim to uphold them as a citizen.”</p>
-          <div class="inline">
-            <div class="photo"><img src="assets/images/march/d.matalene.jpg" /></div><span class="credit">Courtesy of
-              Regina DeMeo.</span><span class="caption"> </span>
-          </div>
-        </div>
-        <p>If you would like for your experience, photos, videos, etc. to appear in this online exclusive, please email
-          <a href="mailto:womensmarch@phillipian.net"
-            style="color: black; margin-top: 25px;">digital@phillipian.net</a>.
-        </p>
-      </article> -->
+      </section> -->
     </main>
     <footer>
-      <p>Produced by Claire Wang and Mia Xiao, Digital Editor and Executive Digital Editors of <em>The Phillipian</em>,
-        vol. CXLV.
-      </p>
-      <p>Made with love in the Newsroom.</p>
+      <p style="margin: 0 2rem;">Created by Claire Wang, with contributions from Bianca Morales, Dakota Chang, Davin
+        Jeong, Ashley Agyeman, Nate
+        Liang, Kevin Niu, and Mia Xiao. <em>The Phillipian</em>,
+        vol. CXLV. <em>Headshots courtesy of Carolyn Barbie, Julia Carmona, Ryan Nasserzadeh, Nabilah Nazar, Claire
+          Wang, and Karen Wang.</em>
+      </p><br />
+      <p style="margin: 0 2rem;">Made with love in the Newsroom.</p><br /><br />
     </footer>
   </div>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
